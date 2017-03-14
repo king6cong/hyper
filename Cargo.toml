@@ -30,9 +30,9 @@ log = "0.3"
 mime = "0.2"
 time = "0.1"
 tokio-core = "0.1.6"
-tokio-proto = "0.1"
-tokio-service = "0.1"
-tokio-io = "0.1"
+tokio-proto = "0.1.1"
+tokio-service = "0.1.0"
+tokio-io = "0.1.0"
 unicase = "1.0"
 url = "1.0"
 
@@ -47,3 +47,12 @@ rustc_version = "0.1"
 [features]
 default = []
 nightly = []
+
+[replace]
+"tokio-core:0.1.6" = { path = "../tokio-core" }
+"futures:0.1.11" = { path = "../futures-rs" }
+"mio:0.6.5" = { path = "../mio" }
+"tokio-service:0.1.0" = { path = "../tokio-service" }
+"tokio-proto:0.1.1" = { path = "../tokio-proto" }
+"tokio-io:0.1.0" = { path = "../tokio-io" }
+"net2:0.2.27" = { path = "../net2-rs" }
