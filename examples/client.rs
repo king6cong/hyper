@@ -45,6 +45,8 @@ fn main() {
         })
     }).map(|_| {
         println!("\n\nDone.");
+    }).map_err(|e| {
+        println!("error: {}", e);
     });
 
     core.run(work).unwrap();
